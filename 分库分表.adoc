@@ -1,0 +1,9 @@
+= 分库分表说明
+
+== 整体划分
+==== 1、业务垂直分库：civet_user、civet_account、civet_trade
+==== 2、水平分库：各个业务库均按userId做range分库或分表
+
+== 约定
+==== 1、禁止在SQL语句中做逻辑计算，不要使用CASE WHEN语句
+
