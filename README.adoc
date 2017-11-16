@@ -31,7 +31,6 @@ T为分页明细中具体业务数据模型。
 com.niiwoo.tripod.web.vo.PageRequestVO：分页请求数据模型，统一pageNumber，pageSize参数，具体业务场景按需继承该类，填充分页查询其他参数。
 * 4、认证、授权: 项目使用shiro做认证授权处理，通用逻辑集成在tripod-web组件中，业务项目依赖该组件并实现com.niiwoo.tripod.web.shiro.UserDetailService接口查询用户身份，权限信息即可。controller中定义的接口默认需要认证(登录)后才能访问，如需未认证访问，在controller类或者方法上加@AuthIgnore来忽略认证。认证后的访问业务代码可以获取到shiro中维护的用户身份信息
 [source,java]
-UserAuthPrincipal principal = (UserAuthPrincipal) SecurityUtils.getSubject().getPrincipal();
 获取认证后当前用户id:
 Long userId = PrincipalContext.getUserId();
 获取认证后当前用户sessionId:
@@ -107,7 +106,3 @@ image::images/assert.jpg[]
 
 * 1、日期时间运算：Jodatime
 * 2、日期时间格式化：FastDateFormat
-
-
-
-
