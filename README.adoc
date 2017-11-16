@@ -5,7 +5,7 @@
 ==== 1、统一标准、统一风格
 
 == 工程整体结构
-image::images/structure.jpg[]
+image::images/structure.png[]
 
 ==== 项目结构主要由三大部分构成：基础组件、基础环境、业务开发项目。
 ===== 基础组件gitlab仓库地址：http://192.168.18.14:81/platform-architecture/niiwoo-tripod.git
