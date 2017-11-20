@@ -1,0 +1,7 @@
+= 枚举定义
+
+* 数据库枚举字段使用tinyint类型
+* mybatis-generator默认类型映射 tinyint——>Byte
+* 业务枚举统一形式,提供两个属性:Byte value 与数据库字段类型对应, String desc 描述说明; 一个方法:根据枚举值value得到对应枚举元素,没有找到抛出异常（非业务异常）
+
+image::images/enum-define.png[]
