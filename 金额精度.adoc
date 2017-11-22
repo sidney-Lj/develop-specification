@@ -1,0 +1,9 @@
+= 金额计算/存储精度
+
+. 舍入模式: 按"银行家算法"做"四舍六入五看奇偶"舍入. java.math.BigDecimal#ROUND_HALF_EVEN
+. 入库: 数据库存储字段 decimal(18,2). 存储精度为小数点后两位,"银行家算法"舍入.
+. 业务代码计算: 计算过程精度6位小数,"银行家算法"舍入.
+
+==== 如:
+
+image::images/decimal-scale.jpg[]
