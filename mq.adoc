@@ -1,6 +1,9 @@
 = MQ 使用
 
-. 生产者与消费者都需要声明queue,bingding,exchange.
+=== 生产者与消费者都需要声明queue,bingding,exchange.
 
-. 发送消息使用RabbitTemplate.convertAndSend(exchange,binding,msg)
+=== 发送消息使用RabbitTemplate.convertAndSend(exchange,binding,msg)
 
+=== 消费消息使用spring 注解方式: @RabbitListener
+
+* 可参考:http://192.168.18.14:81/zhangwanli/mq-demo.git
