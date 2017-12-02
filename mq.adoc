@@ -1,0 +1,6 @@
+= MQ 使用
+
+. 生产者与消费者都需要声明queue,bingding,exchange.
+
+. 发送消息使用RabbitTemplate.convertAndSend(exchange,binding,msg)
+
