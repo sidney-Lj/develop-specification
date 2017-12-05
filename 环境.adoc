@@ -20,7 +20,7 @@
 
 ==== 2、Kibana: http://192.168.18.63:5601 admn:admin
 
-==== 3、dubbo admin: http://192.168.18.63:8080
+==== 3、dubbo admin: http://192.168.18.63:8080 root:Niiwoo@123
 
 ==== 4、RabbitMQ: http://192.168.18.63:15672 civet:Niiwoo_88abc3389
 
