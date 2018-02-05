@@ -1,0 +1,72 @@
+= 各个业务工程地址
+
+拆分工程后git地址：
+
+
+	civet-app:
+		base:		http://192.168.18.14:81/platform-architecture.civet-app/civet-base
+		mobile:		http://192.168.18.14:81/platform-architecture.civet-app/civet-mobile
+		scheduler：	http://192.168.18.14:81/platform-architecture.civet-app/civet-scheduler
+		user:
+			api:	http://192.168.18.14:81/platform-architecture.civet-app.user/civet-user-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.user/civet-user-impl
+		trade:
+			api:	http://192.168.18.14:81/platform-architecture.civet-app.trade/civet-trade-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.trade/civet-trade-impl
+		account:
+			api:	http://192.168.18.14:81/platform-architecture.civet-app.account/civet-account-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.account/civet-account-impl
+		sysconf:
+			api:	http://192.168.18.14:81/platform-architecture.civet-app.sysconf/civet-sysconf-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.sysconf/civet-sysconf-impl
+		snapdata:
+			api:	http://192.168.18.14:81/platform-architecture.civet-app.snapdata/civet-snapdata-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.snapdata/civet-snapdata-impl
+
+
+	civet-manage:
+		web:		http://192.168.18.14:81/platform-architecture.civet-manage/civet-manage-web
+		scheduler：	http://192.168.18.14:81/platform-architecture.civet-manage/civet-manage-scheduler
+		user:
+			api:	http://192.168.18.14:81/platform-architecture.civet-manage.user/civet-manage-user-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.user/civet-manage-user-impl
+		trade:
+			api:	http://192.168.18.14:81/platform-architecture.civet-manage.trade/civet-manage-trade-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.trade/civet-manage-trade-impl
+		account:
+			api:	http://192.168.18.14:81/platform-architecture.civet-manage.account/civet-manage-account-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.account/civet-manage-account-impl
+		sys:
+			api:	http://192.168.18.14:81/platform-architecture.civet-manage.sys/civet-manage-sys-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.sys/civet-manage-sys-impl
+		snapdata:
+			api:	http://192.168.18.14:81/platform-architecture.civet-manage.snapdata/civet-manage-snapdata-api
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.snapdata/civet-manage-snapdata-impl
+
+
+
+	activity:
+		base:		http://192.168.18.14:81/platform-architecture.activity/activity-base
+		mobile:		http://192.168.18.14:81/platform-architecture.activity/activity-mobile
+		manage:		http://192.168.18.14:81/platform-architecture.activity/activity-manage
+		scheduler：	http://192.168.18.14:81/platform-architecture.activity/activity-scheduler
+		stage:
+			api:	http://192.168.18.14:81/platform-architecture.activity/activity-stage-api
+			impl:	http://192.168.18.14:81/platform-architecture.activity/activity-stage-impl
+
+	r360:
+		base:		http://192.168.18.14:81/platform-architecture.asset.r360/r360-base
+		web:		http://192.168.18.14:81/platform-architecture.asset.r360/r360-web
+		scheduler：	http://192.168.18.14:81/platform-architecture.asset.r360/r360-scheduler
+		business：
+			api:	http://192.168.18.14:81/platform-architecture.asset.r360/r360-business-api
+			impl:	http://192.168.18.14:81/platform-architecture.asset.r360/r360-business-impl
+
+	shield:
+		base:		http://192.168.18.14:81/platform-architecture.shield/shield-base
+		web:		http://192.168.18.14:81/platform-architecture.shield/shield-web
+		sys:
+			api:	http://192.168.18.14:81/platform-architecture.shield/shield-sys-api
+			impl:	http://192.168.18.14:81/platform-architecture.shield/shield-sys-impl
+
+	ord-admin: http://192.168.18.14:81/platform-architecture/org-admin
