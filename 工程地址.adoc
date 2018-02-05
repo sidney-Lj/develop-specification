@@ -2,68 +2,68 @@
 
 	civet-app:
 		base:		http://192.168.18.14:81/platform-architecture.civet-app/civet-base.git
-		mobile:		http://192.168.18.14:81/platform-architecture.civet-app/civet-mobile.git
-		scheduler：	http://192.168.18.14:81/platform-architecture.civet-app/civet-scheduler.git
+		mobile:		http://192.168.18.14:81/platform-architecture.civet-app/civet-mobile.git    (部署包)
+		scheduler：	http://192.168.18.14:81/platform-architecture.civet-app/civet-scheduler.git (部署包)
 		user:
 			api:	http://192.168.18.14:81/platform-architecture.civet-app.user/civet-user-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-app.user/civet-user-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.user/civet-user-impl.git    (部署包)
 		trade:
 			api:	http://192.168.18.14:81/platform-architecture.civet-app.trade/civet-trade-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-app.trade/civet-trade-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.trade/civet-trade-impl.git  (部署包)
 		account:
 			api:	http://192.168.18.14:81/platform-architecture.civet-app.account/civet-account-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-app.account/civet-account-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.account/civet-account-impl.git  (部署包)
 		sysconf:
 			api:	http://192.168.18.14:81/platform-architecture.civet-app.sysconf/civet-sysconf-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-app.sysconf/civet-sysconf-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.sysconf/civet-sysconf-impl.git  (部署包)
 		snapdata:
 			api:	http://192.168.18.14:81/platform-architecture.civet-app.snapdata/civet-snapdata-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-app.snapdata/civet-snapdata-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-app.snapdata/civet-snapdata-impl.git    (部署包)
 
 
 	civet-manage:
-		web:		http://192.168.18.14:81/platform-architecture.civet-manage/civet-manage-web.git
-		scheduler：	http://192.168.18.14:81/platform-architecture.civet-manage/civet-manage-scheduler.git
+		web:		http://192.168.18.14:81/platform-architecture.civet-manage/civet-manage-web.git (部署包)
+		scheduler：	http://192.168.18.14:81/platform-architecture.civet-manage/civet-manage-scheduler.git   (部署包)
 		user:
 			api:	http://192.168.18.14:81/platform-architecture.civet-manage.user/civet-manage-user-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.user/civet-manage-user-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.user/civet-manage-user-impl.git  (部署包)
 		trade:
 			api:	http://192.168.18.14:81/platform-architecture.civet-manage.trade/civet-manage-trade-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.trade/civet-manage-trade-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.trade/civet-manage-trade-impl.git    (部署包)
 		account:
 			api:	http://192.168.18.14:81/platform-architecture.civet-manage.account/civet-manage-account-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.account/civet-manage-account-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.account/civet-manage-account-impl.git    (部署包)
 		sys:
 			api:	http://192.168.18.14:81/platform-architecture.civet-manage.sys/civet-manage-sys-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.sys/civet-manage-sys-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.sys/civet-manage-sys-impl.git    (部署包)
 		snapdata:
 			api:	http://192.168.18.14:81/platform-architecture.civet-manage.snapdata/civet-manage-snapdata-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.snapdata/civet-manage-snapdata-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.civet-manage.snapdata/civet-manage-snapdata-impl.git  (部署包)
 
 
 
 	activity:
 		base:		http://192.168.18.14:81/platform-architecture.activity/activity-base.git
-		mobile:		http://192.168.18.14:81/platform-architecture.activity/activity-mobile.git
-		manage:		http://192.168.18.14:81/platform-architecture.activity/activity-manage.git
-		scheduler：	http://192.168.18.14:81/platform-architecture.activity/activity-scheduler.git
+		mobile:		http://192.168.18.14:81/platform-architecture.activity/activity-mobile.git  (部署包)
+		manage:		http://192.168.18.14:81/platform-architecture.activity/activity-manage.git  (部署包)
+		scheduler：	http://192.168.18.14:81/platform-architecture.activity/activity-scheduler.git   (部署包)
 		stage:
 			api:	http://192.168.18.14:81/platform-architecture.activity/activity-stage-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.activity/activity-stage-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.activity/activity-stage-impl.git  (部署包)
 
 	r360:
 		base:		http://192.168.18.14:81/platform-architecture.asset.r360/r360-base.git
-		web:		http://192.168.18.14:81/platform-architecture.asset.r360/r360-web.git
-		scheduler：	http://192.168.18.14:81/platform-architecture.asset.r360/r360-scheduler.git
+		web:		http://192.168.18.14:81/platform-architecture.asset.r360/r360-web.git   (部署包)
+		scheduler：	http://192.168.18.14:81/platform-architecture.asset.r360/r360-scheduler.git (部署包)
 		business：
 			api:	http://192.168.18.14:81/platform-architecture.asset.r360/r360-business-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.asset.r360/r360-business-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.asset.r360/r360-business-impl.git (部署包)
 
 	shield:
 		base:		http://192.168.18.14:81/platform-architecture.shield/shield-base.git
-		web:		http://192.168.18.14:81/platform-architecture.shield/shield-web.git
+		web:		http://192.168.18.14:81/platform-architecture.shield/shield-web.git (部署包)
 		sys:
 			api:	http://192.168.18.14:81/platform-architecture.shield/shield-sys-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.shield/shield-sys-impl.git
+			impl:	http://192.168.18.14:81/platform-architecture.shield/shield-sys-impl.git    (部署包)
 
-	ord-admin: http://192.168.18.14:81/platform-architecture/org-admin.git
+	ord-admin: http://192.168.18.14:81/platform-architecture/org-admin.git  (部署包)
