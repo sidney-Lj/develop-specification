@@ -1,8 +1,5 @@
 = 各个业务工程地址
 
-拆分工程后git地址：
-
-
 	civet-app:
 		base:		http://192.168.18.14:81/platform-architecture.civet-app/civet-base
 		mobile:		http://192.168.18.14:81/platform-architecture.civet-app/civet-mobile
