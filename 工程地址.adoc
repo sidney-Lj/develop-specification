@@ -2,7 +2,7 @@
 
 	civet-app:
 		base:		http://192.168.18.14:81/platform-architecture.civet-app/civet-base.git
-		**mobile:		http://192.168.18.14:81/platform-architecture.civet-app/civet-mobile.git**
+		mobile:		http://192.168.18.14:81/platform-architecture.civet-app/civet-mobile.git
 		scheduler：	http://192.168.18.14:81/platform-architecture.civet-app/civet-scheduler.git
 		user:
 			api:	http://192.168.18.14:81/platform-architecture.civet-app.user/civet-user-api.git
