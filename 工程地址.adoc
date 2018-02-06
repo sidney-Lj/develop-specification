@@ -82,18 +82,28 @@
 			impl:	http://192.168.18.14:81/platform-architecture.activity/activity-stage-impl.git  (部署包)
 			        git@192.168.18.14:platform-architecture.activity/activity-stage-impl.git
 
-	r360:
-		base:		http://192.168.18.14:81/platform-architecture.asset.r360/r360-base.git
-		            git@192.168.18.14:platform-architecture.asset.r360/r360-base.git
-		web:		http://192.168.18.14:81/platform-architecture.asset.r360/r360-web.git   (部署包)
-		            git@192.168.18.14:platform-architecture.asset.r360/r360-web.git
-		scheduler：	http://192.168.18.14:81/platform-architecture.asset.r360/r360-scheduler.git (部署包)
-		            git@192.168.18.14:platform-architecture.asset.r360/r360-scheduler.git
-		business：
-			api:	http://192.168.18.14:81/platform-architecture.asset.r360/r360-business-api.git
-			        git@192.168.18.14:platform-architecture.asset.r360/r360-business-api.git
-			impl:	http://192.168.18.14:81/platform-architecture.asset.r360/r360-business-impl.git (部署包)
-			        git@192.168.18.14:platform-architecture.asset.r360/r360-business-impl.git
+	asset:
+		base:		http://192.168.18.14:81/platform-architecture.asset/asset-base.git
+		            git@192.168.18.14:platform-architecture.asset/asset-base.git
+		web:		http://192.168.18.14:81/platform-architecture.asset/asset-web.git   (部署包)
+		            git@192.168.18.14:platform-architecture.asset/asset-web.git
+		scheduler：	http://192.168.18.14:81/platform-architecture.asset/asset-scheduler.git (部署包)
+		            git@192.168.18.14:platform-architecture.asset/asset-scheduler.git
+		r360：
+			api:	http://192.168.18.14:81/platform-architecture.asset/asset-r360-api.git
+			        git@192.168.18.14:platform-architecture.asset/asset-r360-api.git
+			impl:	http://192.168.18.14:81/platform-architecture.asset/asset-r360-impl.git (部署包)
+			        git@192.168.18.14:platform-architecture.asset/asset-r360-impl.git
+		cardniu:
+		    api:    http://192.168.18.14:81/platform-architecture.asset/asset-cardniu-api.git
+		            git@192.168.18.14:platform-architecture.asset/asset-cardniu-api.git
+		    impl:   http://192.168.18.14:81/platform-architecture.asset/asset-cardniu-impl.git (部署包)
+		            git@192.168.18.14:platform-architecture.asset/asset-cardniu-impl.git
+	    common:
+	       api:     http://192.168.18.14:81/platform-architecture.asset/asset-common-api.git
+	                git@192.168.18.14:platform-architecture.asset/asset-common-api.git
+	       impl:    http://192.168.18.14:81/platform-architecture.asset/asset-common-impl.git (部署包)
+	                git@192.168.18.14:platform-architecture.asset/asset-common-impl.git
 
 	shield:
 		base:		http://192.168.18.14:81/platform-architecture.shield/shield-base.git
