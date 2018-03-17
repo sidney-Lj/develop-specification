@@ -26,7 +26,7 @@
 
 ==== 5、zkui: http://192.168.18.74:9099 admin:manager
 
-== huidu环境灰度
+== 环境灰度
 
 === 重构存管灰度环境服务端地址：
 ==== 银行存管回调: https://bank-civet-api.niiwoo.com/lanmao/notify
