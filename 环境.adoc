@@ -28,7 +28,7 @@
 
 ==== 5、zkui: http://192.168.18.74:9099 admin:manager
 
-== 环境灰度
+== 生产/灰度
 
 === 重构存管灰度环境服务端地址：
 ==== 银行存管回调: https://bank-civet-api.niiwoo.com/lanmao/notify
@@ -41,10 +41,9 @@
 ==== https://civet-manage.niiwoo.com/activity-manage/
 ==== https://civet-manage.niiwoo.com/org-admin/
 
+==== kibana：http://183.60.165.200:3000
+==== 出口IP： 183.61.242.16
+
 === H5专用服务端地址：
 ==== 业务API：https://h5-civet-api.niiwoo.com
 ==== 活动API：https://h5-activity-api.niiwoo.com
-
-==== kibana：http://183.60.165.200:3000
-
-==== 出口IP： 183.61.242.16
