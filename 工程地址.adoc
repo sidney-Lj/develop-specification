@@ -118,3 +118,8 @@
 
 	ord-admin: http://192.168.18.14:81/platform-architecture/org-admin.git  (部署包)
 	           git@192.168.18.14:platform-architecture/org-admin.git
+	           
+	           
+
+    帮帮贷:         http://192.168.18.14:81/platform-architecture.bbdai/bbdai-mobile.git  (部署包)
+	                git@192.168.18.14:platform-architecture.bbdai/bbdai-mobile.git
