@@ -81,6 +81,12 @@
 			        git@192.168.18.14:platform-architecture.activity/activity-stage-api.git
 			impl:	http://192.168.18.14:81/platform-architecture.activity/activity-stage-impl.git  (部署包)
 			        git@192.168.18.14:platform-architecture.activity/activity-stage-impl.git
+		event:
+		    api:    http://192.168.18.14:81/platform-architecture.activity/activity-event-api.git
+		            git@192.168.18.14:platform-architecture.activity/activity-event-api.git
+		    impl:   http://192.168.18.14:81/platform-architecture.activity/activity-event-impl.git (部署包)
+		            git@192.168.18.14:platform-architecture.activity/activity-event-impl.git
+	    
 
 	asset:
 		base:		http://192.168.18.14:81/platform-architecture.asset/asset-base.git
