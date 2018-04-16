@@ -1,0 +1,13 @@
+= 分支流程
+
+=== 线上bug修复
+
+1、每次bug修改基于master拉出新分支:hotfix/username-date-desc
+
+2、请求合并到hotfix/trunk，发布线上bug验证环境，验证bug是否修复完成
+
+3、请求修改变更发布线上环境，将hotfix/trunk分支cherry-pick或merge到master
+
+4、将hotfix/trunk分支cherry-pick或merge到开发中分支
+
+5、删除hotfix/username-date-desc分支
