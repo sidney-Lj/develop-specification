@@ -1,5 +1,27 @@
 = 分支流程
 
+=== 功能开发&测试
+
+1、新功能、新需求开发在feature/*分支上提交更新代码
+
+2、某个功能分支完成后提测，合并到test分支发布测试环境
+
+=== 预发布体验
+
+1、预发布分支基于master拉出pre-release分支
+
+2、将test分支merge到pre-release分支
+
+3、修改为稳定依赖
+
+4、发布部署
+
+=== 新特性(版本)发布上线
+
+1、pre-release分支合并到master
+
+2、打tag
+
 === 线上bug修复
 
 1、每次bug修改基于master拉出新分支:hotfix/username-date-desc
