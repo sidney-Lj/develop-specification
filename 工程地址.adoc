@@ -134,3 +134,16 @@
 
     帮帮贷:         http://192.168.18.14:81/platform-architecture.bbdai/bbdai-mobile.git  (部署包)
 	                git@192.168.18.14:platform-architecture.bbdai/bbdai-mobile.git
+
+	asset-org:
+		base:		http://192.168.18.14:81/platform-architecture.asset-org/asset-org-base.git
+		            git@192.168.18.14:platform-architecture.asset-org/asset-org-base.git
+		web:		http://192.168.18.14:81/platform-architecture.asset-org/asset-org-web.git (部署包)
+		            git@192.168.18.14:platform-architecture.asset-org/asset-org-web.git
+		scheduler:	http://192.168.18.14:81/platform-architecture.asset-org/asset-org-scheduler.git (部署包)
+		            git@192.168.18.14:platform-architecture.asset-org/asset-org-scheduler.git
+		business:
+			api:	http://192.168.18.14:81/platform-architecture.asset-org/asset-org-business-api.git
+			        git@192.168.18.14:platform-architecture.asset-org/asset-org-business-api.git
+			impl:	http://192.168.18.14:81/platform-architecture.asset-org/asset-org-business-impl.git    (部署包)
+			        git@192.168.18.14:platform-architecture.asset-org/asset-org-business-impl.git
