@@ -2,11 +2,11 @@
 
 === 功能开发&测试
 
-1、新功能、新需求开发在feature/*分支上提交更新代码，该分支基于master或者其他feature分支，视具体情况而定
+1、新功能、**新需求开发在feature/*分支**上提交更新代码，该分支基于master或者其他feature分支，视具体情况而定
 
-2、某个功能分支完成后提测，合并到test分支发布测试环境
+2、某个功能分支完成后提测，合并到**test分支发布测试环境**
 
-=== 预发布体验
+=== 预发布体验(体验环境)
 
 1、预发布分支基于master拉出pre-release分支
 
@@ -14,19 +14,19 @@
 
 3、修改为稳定依赖
 
-4、发布部署
+4、发布部署体验环境
 
-=== 新特性(版本)发布上线
+=== 新版本发布上线(生产环境)
 
-1、pre-release分支合并到master
+1、pre-release分支合并到master，发布生产环境
 
 2、打tag
 
-=== 线上bug修复
+=== 线上bug修复(hotfix环境)
 
 1、每次bug修改基于master拉出新分支:hotfix/username-date-desc
 
-2、发起、处理merge request到hotfix/trunk，发布线上bug验证环境，验证bug是否修复完成
+2、发起、处理merge request到**hotfix/trunk发布到hotfix环境**
 
 3、发起、处理merge request到master
 
