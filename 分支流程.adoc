@@ -10,7 +10,7 @@
 
 1、预发布分支基于master拉出pre-release分支
 
-2、将test分支merge到pre-release分支
+2、将test分支merge到**pre-release分支发布体验环境**
 
 3、修改为稳定依赖
 
@@ -18,7 +18,7 @@
 
 === 新版本发布上线(生产环境)
 
-1、pre-release分支合并到master，发布生产环境
+1、pre-release分支合并到**master发布生产环境**
 
 2、打tag
 
