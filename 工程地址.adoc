@@ -110,6 +110,13 @@
 		            git@192.168.18.14:platform-architecture.asset/asset-cardniu-api.git
 		    impl:   http://192.168.18.14:81/platform-architecture.asset/asset-cardniu-impl.git (部署包)
 		            git@192.168.18.14:platform-architecture.asset/asset-cardniu-impl.git
+        huijie:
+            api:    http://192.168.18.14:81/platform-architecture.asset/asset-huijie-api.git
+                    git@192.168.18.14:platform-architecture.asset/asset-huijie-api.git
+            impl    http://192.168.18.14:81/platform-architecture.asset/asset-huijie-impl.git   (部署包)
+                    git@192.168.18.14:platform-architecture.asset/asset-huijie-impl.git
+            web     http://192.168.18.14:81/platform-architecture.asset/asset-huijie-web.git    (部署包)
+                    git@192.168.18.14:platform-architecture.asset/asset-huijie-web.git
 	    common:
 	       api:     http://192.168.18.14:81/platform-architecture.asset/asset-common-api.git
 	                git@192.168.18.14:platform-architecture.asset/asset-common-api.git
