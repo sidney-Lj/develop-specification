@@ -1,5 +1,7 @@
 = 分支流程
 
+image::images/git分支流程.jpg[]
+
 === 功能开发&测试
 
 1、[red]`**新版本开发在feature/*分支**` 上提交更新代码，该分支基于master或者其他feature分支，视具体情况而定
