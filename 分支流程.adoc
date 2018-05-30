@@ -1,6 +1,6 @@
 = 分支流程
 
-image::images/git分支流程.jpg[]
+image::images/git-branch-flow.jpg[]
 
 === 功能开发&测试
 
