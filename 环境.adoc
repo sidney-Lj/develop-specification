@@ -27,23 +27,3 @@
 ==== 4、RabbitMQ: http://192.168.18.63:15672 civet:Niiwoo_88abc3389
 
 ==== 5、zkui: http://192.168.18.74:9099 admin:manager
-
-== 生产/灰度
-
-=== 重构存管灰度环境服务端地址：
-==== 银行存管回调: https://bank-civet-api.niiwoo.com/lanmao/notify
-==== 重构存管业务API：https://civet-api.niiwoo.com
-==== 重构存管活动API：https://activity-api.niiwoo.com
-==== 重构存管第三方机构API：https://third-api.niiwoo.com
-==== 重构存管后台入口：https://civet-manage.niiwoo.com
-==== https://civet-manage.niiwoo.com/shield-manage/
-==== https://civet-manage.niiwoo.com/civet-manage/
-==== https://civet-manage.niiwoo.com/activity-manage/
-==== https://civet-manage.niiwoo.com/org-admin/
-
-==== kibana：http://183.60.165.200:3000
-==== 出口IP： 183.61.242.16
-
-=== H5专用服务端地址：
-==== 业务API：https://h5-civet-api.niiwoo.com
-==== 活动API：https://h5-activity-api.niiwoo.com
