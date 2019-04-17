@@ -8,7 +8,7 @@
 image::images/structure.png[]
 
 ==== 项目结构主要由三大部分构成：基础组件、基础环境、业务开发项目。
-===== 基础组件gitlab仓库地址：http://192.168.18.14:81/platform-architecture/niiwoo-tripod.git
+===== 基础组件gitlab仓库地址：http://192.168.18.14:81/platform-architecture/tripod.git
 
 * 1、基础组件包含了第三方服务调用以及支持业务快速开发的web层基础库，service层基础库等。业务开发项目直接maven依赖这些组件库Autowired注入相关类即可使用相关功能。
 * 2、基础环境为业务项目依赖软件环境，使用到的技术栈。
@@ -18,18 +18,18 @@ image::images/structure.png[]
 == web接入层
 * 1、职责：定义HTTP请求接口，请求报文，响应报文，做请求必填项与安全性校验，调用内部服务，聚合组装服务结果响应给客户端。
 * 2、包结构：
-以civet-mobile为例，com.niiwoo.civet.mobile为该模块顶级目录，其下按职能分不同子包。如controller、vo等。各个职能包下可按业务功能不同再分子包，如controller.invest、controller.user等。方便做切面配置时基于职能织入切面。[red]`web层的与前端交互的数据模型称之为vo(view object)，放置在vo包下。`
+以civet-mobile为例，com.civet.mobile为该模块顶级目录，其下按职能分不同子包。如controller、vo等。各个职能包下可按业务功能不同再分子包，如controller.invest、controller.user等。方便做切面配置时基于职能织入切面。[red]`web层的与前端交互的数据模型称之为vo(view object)，放置在vo包下。`
 
 image::images/web-package.png[]
 
 * 3、基础类：为统一规范公共数据模型，在tripod-web中定义了部分客户端请求响应公共数据模型
 [source,java,indent=0]
-com.niiwoo.tripod.web.vo.Empty：仅返回respCode，message。无业务数据，一般用户增删改请求时。
-com.niiwoo.tripod.web.vo.Result<T>：带有业务数据返回的统一数据模型，泛型T为具体业务数据。
-com.niiwoo.tripod.web.vo.Page<T>：分页响应数据模型，规范统一分页数据。
+com.tripod.web.vo.Empty：仅返回respCode，message。无业务数据，一般用户增删改请求时。
+com.tripod.web.vo.Result<T>：带有业务数据返回的统一数据模型，泛型T为具体业务数据。
+com.tripod.web.vo.Page<T>：分页响应数据模型，规范统一分页数据。
 T为分页明细中具体业务数据模型。
-com.niiwoo.tripod.web.vo.PageRequestVO：分页请求数据模型，统一pageNumber，pageSize参数，具体业务场景按需继承该类，填充分页查询其他参数。
-* 4、认证、授权: 项目使用shiro做认证授权处理，通用逻辑集成在tripod-web组件中，业务项目依赖该组件并实现com.niiwoo.tripod.web.shiro.UserDetailService接口查询用户身份，权限信息即可。controller中定义的接口默认需要认证(登录)后才能访问，如需未认证访问，在controller类或者方法上加@AuthIgnore来忽略认证。认证后的访问业务代码可以获取到shiro中维护的用户身份信息
+com.tripod.web.vo.PageRequestVO：分页请求数据模型，统一pageNumber，pageSize参数，具体业务场景按需继承该类，填充分页查询其他参数。
+* 4、认证、授权: 项目使用shiro做认证授权处理，通用逻辑集成在tripod-web组件中，业务项目依赖该组件并实现com.tripod.web.shiro.UserDetailService接口查询用户身份，权限信息即可。controller中定义的接口默认需要认证(登录)后才能访问，如需未认证访问，在controller类或者方法上加@AuthIgnore来忽略认证。认证后的访问业务代码可以获取到shiro中维护的用户身份信息
 [source,java]
 获取认证后当前用户id:
 Long userId = PrincipalContext.getUserId();
@@ -51,7 +51,7 @@ impl定义服务具体实现：如何处理消费者的请求，操作具体业�
 image::images/user-impl-package.jpg[]
 
 impl是服务具体实现模块，其中包含数据存储的访问。
-com.niiwoo.civet.user为模块顶级目录，其下主要包含service包（具体业务逻辑处理），dao包（数据存储访问处理）。
+com.civet.user为模块顶级目录，其下主要包含service包（具体业务逻辑处理），dao包（数据存储访问处理）。
 [red]`service.dubbo： api模块中dubbo接口的具体实现，接受服务消费者请求，或请求其他dubbo服务，相当于服务内通讯层。`
 [red]`service.local：服务内部具体实现，本地事物应该该层处理，本地事物不应出现在dubbo服务通讯层。`
 dao包下主要包含entity（与数据库对应的数据模型），mapper（mybatis接口），mapping（mybatis的sql xml）。
@@ -59,7 +59,7 @@ dao包下内容每个模块执行mybatis-generator插件自动生成：
 
 image::images/mybatis-generator.jpg[]
 
-自动生成的配置文件位于每个impl模块src/main/generated/ generator.xml。生成内容放在src/main/generated目录下，按需拷贝覆盖到com.niiwoo.civet.user.dao目录下。
+自动生成的配置文件位于每个impl模块src/main/generated/ generator.xml。生成内容放在src/main/generated目录下，按需拷贝覆盖到com.civet.user.dao目录下。
 MapperExt.java：业务扩展mybatis的Mapper接口，自动生成的与业务添加的隔离
 MapperExt.xml：业务扩展sql xml文件。
 mybatis-generator生成的entity、mapper接口、xml 统一不加表名前缀，如表名t_tc_project 生成entity为Project.java，mapper为ProjectMapper.java，xml为ProjectMapper.xml。
@@ -67,21 +67,21 @@ mybatis-generator生成的entity、mapper接口、xml 统一不加表名前缀�
 * 3、服务间基础数据模型：
 
 [source,java]
-com.niiwoo.tripod.provider.dto.request.PageRequestDTO:服务间分页请求数据模型，统一定义了pageNumber第几页，pageSize页大小。业务数据模型有额外参数请继承该类，添加额外属性。
+com.tripod.provider.dto.request.PageRequestDTO:服务间分页请求数据模型，统一定义了pageNumber第几页，pageSize页大小。业务数据模型有额外参数请继承该类，添加额外属性。
 
 [source,java]
-com.niiwoo.tripod.provider.dto.request.PageRequestDTO#getOffset()计算sql的limit偏移值。mybatis使用ognl取值，limit #{offset}, 10 会调用getOffset()方法
+com.tripod.provider.dto.request.PageRequestDTO#getOffset()计算sql的limit偏移值。mybatis使用ognl取值，limit #{offset}, 10 会调用getOffset()方法
 
 [source,java]
-com.niiwoo.tripod.provider.dto.response.PageResponseDTO<T>:服务间分页响应数据模型，统一定义了totalCount、totalPage、items。
+com.tripod.provider.dto.response.PageResponseDTO<T>:服务间分页响应数据模型，统一定义了totalCount、totalPage、items。
 
 [source,java]
-com.niiwoo.tripod.provider.dto.response.PageResponseDTO#measureTotalPage(int totalCount, int pageSize)计算totalPage
+com.tripod.provider.dto.response.PageResponseDTO#measureTotalPage(int totalCount, int pageSize)计算totalPage
 
 == 异常处理
 
 ==== 整个系统内异常主要分系统异常、业务异常两大类。
-* 1、业务异常：com.niiwoo.tripod.base.exception.BizException及其子类，业务异常应由业务处理过程中判定不满足业务条件时开发人员手动显示抛出，调用throw new BizException(String errorCode, String... errorMessage)方法。或者throw new BizException(String errorCode, String errorMessage)。
+* 1、业务异常：com.tripod.base.exception.BizException及其子类，业务异常应由业务处理过程中判定不满足业务条件时开发人员手动显示抛出，调用throw new BizException(String errorCode, String... errorMessage)方法。或者throw new BizException(String errorCode, String errorMessage)。
 其中errorCode为统一维护的业务异常码，由每个业务服务api提供(resources/messsage/xxx.message.xml中定义的KV键值对)，errorMessage为可变参数，提供额外说明。
 
 * 2、系统异常：除业务异常以外统一捕获到的异常都作系统异常处理，返回给客户端系统错误。
